@@ -4,23 +4,23 @@ package com.example.javac.musicapp;
 public class Usuario {
 
     private String login;
-    private String senha;
+    private String hashsenha;
 
-    public Usuario(String login, String senha) {
+    public Usuario(String login, String hashsenha) {
         this.login = login;
-        this.senha = senha;
+        this.hashsenha = hashsenha;
     }
 
     public String getNome() {
         return this.login;
     }
 
-    public String getSenha() {
-        return this.senha;
+    public String gethashsenha() {
+        return this.hashsenha;
     }
 
-    public boolean verificar_login(String login, String senha) {
-        if (this.login.equals(login) && this.senha.equals(senha)) {
+    public boolean verificar_login(String login, String hashsenha) {
+        if (this.login.equals(login) && this.hashsenha.equals(hashsenha)) {
             return true;
         } else {
             return false;

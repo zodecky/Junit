@@ -25,5 +25,9 @@ public class Artista extends DadosUsuarioNaoDAO{
         return 0;
     }
 
+    public String getNome() {
+        return this.nome_artistico;
+    }
+
 
 }

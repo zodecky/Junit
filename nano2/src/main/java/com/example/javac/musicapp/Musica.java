@@ -28,4 +28,8 @@ public class Musica extends DadosUsuarioNaoDAO {
     public boolean avaliar(int nota) {
         return false;
     }
+
+    public String getNome() {
+        return this.nome;
+    }
 }
